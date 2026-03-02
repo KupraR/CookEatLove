@@ -1,0 +1,9 @@
+{
+  "name": "Cook Eat Love",
+  "short_name": "CookEatLove",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFF9F4",
+  "theme_color": "#C97C5D",
+  "icons": []
+}

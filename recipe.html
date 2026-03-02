@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Receita — Cook Eat Love</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <div>
+        <h1><a href="index.html">Cook Eat Love</a></h1>
+        <div class="small">Receita</div>
+      </div>
+      <div class="actions">
+        <button id="print" class="primary">Imprimir</button>
+        <a class="small" href="index.html" style="align-self:center;">Voltar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="recipe">
+    <h2 id="title"></h2>
+    <div class="meta" id="meta"></div>
+    <div class="badges" id="badges" style="margin-top:10px;"></div>
+    <hr class="sep"/>
+    <pre id="text"></pre>
+    <div class="media" id="media"></div>
+    <hr class="sep"/>
+    <a id="source" class="small" target="_blank" rel="noopener"></a>
+  </div>
+  <footer style="margin-top:14px;">Dica: para offline, abre a app 1x com internet.</footer>
+</main>
+<script src="recipe.js"></script>
+</body>
+</html>

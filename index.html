@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Cook Eat Love</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="theme-color" content="#C97C5D">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <div>
+        <h1>Cook Eat Love</h1>
+        <div class="small" id="count">—</div>
+      </div>
+      <div class="small">WebApp privada • offline</div>
+    </div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Pesquisar por nome ou ingrediente…"/>
+      <select id="cat">
+        <option value="">Todas as categorias</option>
+      </select>
+      <a class="small" href="about.html" style="align-self:center; padding:6px 8px; border:1px solid var(--border); border-radius:12px; background:#fff;">Sobre</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="grid" id="grid"></div>
+  <footer>© Cook Eat Love — Arquivo pessoal</footer>
+</main>
+
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
